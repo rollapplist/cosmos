@@ -25,3 +25,8 @@ Kullanmak istediğiniz cüzdan (cüzdan mnemoniclerinizi import etmek için)
 ```
 kujirad keys add wallet --recover
 ```
+Cüzdanları isimleri ve adresleri ile listeleme
+
+```
+kujira<colour:blue>d keys list
+```
