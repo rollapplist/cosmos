@@ -7,7 +7,7 @@
 kullanılan kodlarda dymensiond yerine dymd kullanılır. 
 Tokenlerde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmasının nedeni biri kaon ağında diğeri mainnet ağında kullanılan token adlarıdır.**
 
-![alt text](https://i.hizliresim.com/5gmzio.png)
+![alt text](https://i.hizliresim.com/5gmzio.jpeg)
 
 
 Yukarıdaki bilgilere göre genel kullanılan kodlar;
