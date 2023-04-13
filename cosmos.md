@@ -54,14 +54,19 @@ kujirad tx staking create-validator \
 Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000 (token adedi), ukuji , monikeradınız, id, detaylar, ve eğer değiştirmişseniz cüzdan isminiz (wallet)
 
 
-- ** --amount= delege etmek istediğiniz token miktarı**
+- **--amount= delege etmek istediğiniz token miktarı**
 - **Monikeradınız= Validatör isminiz**
-- **id= https://keybase.io/ sitesine kayıt olup profil resmi yükledikten sonra profilinizde gözüken id numarası. Bunu --identity=id'deki id yerine boşluksuz şekilde yazarsanız explorer üzerinde validatörünüzün resmi gözükür.**
-
+- **--identity=id https://keybase.io/ sitesine kayıt olup profil resmi yükledikten sonra profilinizde gözüken id numarasını id yerine boşluksuz şekilde yazarsanız explorer üzerinde validatörünüzün resmi gözükür.**
 
 ![alt text](https://i.hizliresim.com/ss2q435.png)
 
-- **detaylar= Validatörünüz hakkındaki bilgiler.**
-- ** --from= cüzdan isminiz**
-- 
+- **--details= Validatörünüz hakkındaki bilgiler. (detaylar yerine yazılacak)**
+- **--chain-id= projenin ağ ismi**
+- **--commission-rate= validatörünüze stake edilen tokenlerden alacak olduğunuz komisyon oranı (0.10=%10)**
+- **--commission-max-rate= maximum yapabileceğiniz komisyon oranı**
+- **--commission-max-change-rate= komisyon düzeltmede yapabileceğiniz max komisyon değiştirme oranı**
+- **--min-self-delegation= kendinize delege edeceğiniz minimum token miktarı**
+- **--from= cüzdan isminiz**
+- **--gas-prices= gas fiyatı (projeden projeye değişebilir)**
+- **--gas-adjustment= gas ayarı**
 
