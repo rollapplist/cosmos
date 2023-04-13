@@ -52,6 +52,7 @@ kujirad tx staking create-validator \
 --gas=auto \
 -y
 ```
+
 Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000 (token adedi), ukuji , monikeradınız, id, detaylar, ve eğer değiştirmişseniz cüzdan isminiz (wallet)
 
 
@@ -62,7 +63,7 @@ Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000
 ![alt text](https://i.hizliresim.com/ss2q435.png)
 
 - **--details= Validatörünüz hakkındaki bilgiler. (detaylar yerine yazılacak)**
-- **--website=sitenizin linki
+- **--website=sitenizin linki**
 - **--chain-id= projenin ağ ismi**
 - **--commission-rate= validatörünüze stake edilen tokenlerden alacak olduğunuz komisyon oranı (0.10=%10)**
 - **--commission-max-rate= maximum yapabileceğiniz komisyon oranı**
@@ -138,7 +139,8 @@ kujirad tx staking delegate YOUR_TO_VALOPER_ADDRESS 1000000ukuji --from wallet -
 kujirad tx staking redelegate $(kujirad keys show wallet --bech val -a) valoperadresi 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-## Unbond: Stake ettiğiniz tokenleri unstake etme (testnet ve mainnet ağlarında unstake süresi genellikle 14-21gündür.)
+## Unbond: Stake ettiğiniz tokenleri unstake etme 
+(testnet ve mainnet ağlarında unstake süresi genellikle 14-21gündür.)
 
 ```
 kujirad tx staking unbond $(kujirad keys show wallet --bech val -a) 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y 
