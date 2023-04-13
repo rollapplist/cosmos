@@ -183,3 +183,30 @@ sed -i 's|^indexer *=.*|indexer = "kv"|' $HOME/.kujira/config/config.toml
 Koddaki kv yerini null yapabilirsiniz. .kujira klasörü başka projede örnek olarak Kyve'da .kyve'dır.
 
 
+## Pruning (Budama)
+
+Bu kod ile projenin bütün block datalarını sunucunuzda tutmazsınız. Örnek koddaki gibi en sonki 100 block sadece sunucunuzda tutulur.
+Testnet projeleri için uygundur. Mainnet Validatörleri için tercih edilmez.
+
+
+```
+sed -i.bak -e 's|^pruning *=.*|pruning = "custom"|; s|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|; s|^pruning-keep-every *=.*|pruning-keep-every = "0"|; s|^pruning-interval *=.*|pruning-interval = "17"|' $HOME/.kujira/config/app.toml
+```
+Koddaki .kujira klasörünü değiştirin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
