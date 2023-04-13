@@ -70,3 +70,48 @@ Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000
 - **--gas-prices= gas fiyatı (projeden projeye değişebilir)**
 - **--gas-adjustment= gas ayarı**
 
+
+Oluşturmuş olduğunuz validatörde moniker, id, komisyon vb. değişikliği yapma
+
+```
+kujirad tx staking edit-validator \
+--new-moniker="Monikeradınız" \
+--identity=id \
+--details="detaylar" \
+--chain-id=kaiyo-1 \
+--commission-rate=0.1 \
+--from=wallet \
+--gas-prices=0.1ukuji \
+--gas-adjustment=1.5 \
+--gas=auto \
+-y
+```
+
+Jailed durumundan kurtulmak için
+
+```
+kujirad tx slashing unjail --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
+
+
+Validatörünüz bilgilerini görme
+
+```
+kujirad q staking validator $(kujirad keys show wallet --bech val -a)
+
+```
+
+Validatörünüzde biriken ödülleri çekme
+
+```
+kujirad tx distribution withdraw-all-rewards --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
+
+Validatörünüzde biriken ödüller ve komisyonları çekme
+
+```
+kujirad tx distribution withdraw-rewards $(kujirad keys show wallet --bech val -a) --commission --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
+
+
+
