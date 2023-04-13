@@ -16,12 +16,12 @@ Tokenlerde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmas
 
 Yeni Cüzdan 
 
-'''
+```
 kujirad keys add wallet
-'''
+```
 
 Kullanmak istediğiniz cüzdan (cüzdan mnemoniclerinizi import etmek için)
 
-'''
+```
 kujirad keys add wallet --recover
-'''
+```
