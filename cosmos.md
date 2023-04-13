@@ -10,7 +10,7 @@ Tokenlerde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmas
 ![alt text](https://i.hizliresim.com/s5gmzio.png)
 
 # Yukarıdaki bilgilere göre genel kullanılan kodlar;
-(kodlar kujira projesi üzerinden yazılmıştır)
+## (kodlar kujira projesi üzerinden yazılmıştır)
 
 - **Cüzdan isminizi değiştirmek isterseniz wallet olan yerleri kendi cüzdan isminiz ile değiştirebilirsiniz.**
 
