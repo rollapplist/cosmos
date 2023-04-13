@@ -55,7 +55,7 @@ Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000
 
 
 - **--amount= delege etmek istediğiniz token miktarı**
-- **Monikeradınız= Validatör isminiz**
+- **moniker="Monikeradınız" = Validatör isminiz (monikeradınız yerine yazılacak)**
 - **--identity=id https://keybase.io/ sitesine kayıt olup profil resmi yükledikten sonra profilinizde gözüken id numarasını id yerine boşluksuz şekilde yazarsanız explorer üzerinde validatörünüzün resmi gözükür.**
 
 ![alt text](https://i.hizliresim.com/ss2q435.png)
