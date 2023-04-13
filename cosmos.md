@@ -2,9 +2,9 @@
 
 - **Cosmos tabanlı projelerin node testnetlerinde node kurarken, validatör oluştururken yada diğer işlemler için kullanılan kodlar aynıdır.**
 - **Kodlarda değişen yerler, proje ismi, chainid ve projenin tokenidir. (gas ve fee değerleri de bazen farklılık gösterebilir)**
-- **Buna aşağıdaki görselden bakalım. Kodlarda sadece proje ismi değişmektedir. Nadir olarak bazı projelerde örnek olarak Dymension projesinde 
+- **Buna aşağıdaki görselden bakalım. Mesela aşağıdaki kodda sadece proje ismi değişmektedir. Nadir olarak bazı projelerde örnek olarak Dymension projesinde 
 kullanılan kodlarda dymensiond yerine dymd kullanılır. 
-Tokenlerde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmasının nedeni biri kaon ağında diğeri mainnet ağında kullanılan token adlarıdır.**
+Tokenlarde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmasının nedeni biri kaon ağında diğeri mainnet ağında kullanılan token adlarıdır.**
 
 ![alt text](https://i.hizliresim.com/78mogm4.png)
 
