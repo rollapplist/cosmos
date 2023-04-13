@@ -53,8 +53,8 @@ kujirad tx staking create-validator \
 ```
 Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000 (token adedi), ukuji , monikeradınız, id, detaylar, ve eğer değiştirmişseniz cüzdan isminiz (wallet)
 
-Monikeradınız= Validatör isminiz
-id= https://keybase.io/ sitesine kayıt olup profil resmi yükledikten sonra profilinizde gözüken id numarası. Bunu --identity=id'deki id yerine boşluksuz şekilde yazarsanız explorer üzerinde validatörünüzün resmi gözükür.
+- **Monikeradınız= Validatör isminiz**
+- **id= https://keybase.io/ sitesine kayıt olup profil resmi yükledikten sonra profilinizde gözüken id numarası. Bunu --identity=id'deki id yerine boşluksuz şekilde yazarsanız explorer üzerinde validatörünüzün resmi gözükür.**
 
 
 ![alt text](https://i.hizliresim.com/ss2q435.png)
