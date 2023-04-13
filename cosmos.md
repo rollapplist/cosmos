@@ -126,7 +126,7 @@ kujirad tx staking delegate $(kujirad keys show wallet --bech val -a) 1000000uku
 ```
 kujirad tx staking delegate valoperadresi 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
-valoperadresi= explorerda validatörün profilinde bulunan adres.
+valoperadresi= explorerda validatörün profilinde bulunan operator adresi.
 
 ## Burada gördüklerimizi görsel üzerinden görmek istersek;
 
