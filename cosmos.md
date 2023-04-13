@@ -110,6 +110,16 @@ Validatörünüzde biriken ödül ve komisyonları çekme
 ```
 kujirad tx distribution withdraw-rewards $(kujirad keys show wallet --bech val -a) --commission --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
+Kendi Validatörünüze token delege etme
 
+```
+kujirad tx staking delegate $(kujirad keys show wallet --bech val -a) 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
+
+Başka Validatöre token delege etme
+
+```
+kujirad tx staking delegate YOUR_TO_VALOPER_ADDRESS 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
 
 
