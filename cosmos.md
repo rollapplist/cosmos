@@ -147,3 +147,38 @@ kujirad tx bank send wallet cüzdanadresi 1000000ukuji --from wallet --chain-id 
 cüzdanadresi=gönderecek olduğunuz cüzdan adresi
 
 
+Aktif olan proposal/oylamaları görme
+
+```
+kujirad query gov proposals
+```
+
+EVET oyu
+
+```
+kujirad tx gov vote 1 yes --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
+
+HAYIR oyu
+
+```
+kujirad tx gov vote 1 no --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
+
+ÇEKİMSER oyu
+
+```
+kujirad tx gov vote 1 abstain --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
+```
+
+## Indexer Güncelleme
+Buradaki kodda kv=dizinleri tutar
+null=dizinleri tutmaz. (sunucuda fazla yer kaplamaz)
+
+```
+sed -i 's|^indexer *=.*|indexer = "kv"|' $HOME/.kujira/config/config.toml
+```
+
+Koddaki kv yerini null yapabilirsiniz. .kujira klasörü başka projede örnek olarak Kyve'da .kyve'dır.
+
+
