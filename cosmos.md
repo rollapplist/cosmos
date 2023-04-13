@@ -7,7 +7,7 @@
 kullanılan kodlarda dymensiond yerine dymd kullanılır. 
 Tokenlerde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmasının nedeni biri kaon ağında diğeri mainnet ağında kullanılan token adlarıdır.**
 
-![alt text](https://i.hizliresim.com/a0w50bo.png)
+![alt text](https://i.hizliresim.com/hz9px1d.png)
 
 # Yukarıdaki bilgilere göre genel kullanılan kodlar;
 ## (kodlar kujira projesi üzerinden yazılmıştır)
@@ -56,5 +56,6 @@ Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000
 Monikeradınız= Validatör isminiz
 id= https://keybase.io/ sitesine kayıt olup profil resmi yükledikten sonra profilinizde gözüken id numarası. Bunu --identity=id'deki id yerine boşluksuz şekilde yazarsanız explorer üzerinde validatörünüzün resmi gözükür.
 
-![alt text](https://i.hizliresim.com/g02u7hh.png)
+
+![alt text](https://i.hizliresim.com/ss2q435.png)
 
