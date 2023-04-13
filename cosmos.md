@@ -61,7 +61,7 @@ Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000
 
 ![alt text](https://i.hizliresim.com/ss2q435.png)
 
-- **detaylar= Validatörünüz hakkındaki bilgiler.
-- ** --from= cüzdan isminiz
+- **detaylar= Validatörünüz hakkındaki bilgiler.**
+- ** --from= cüzdan isminiz**
 - 
 
