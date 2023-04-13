@@ -9,4 +9,19 @@ Tokenlerde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmas
 
 ![alt text](https://i.hizliresim.com/s5gmzio.png)
 
-Yukarıdaki bilgilere göre genel kullanılan kodlar;
+# Yukarıdaki bilgilere göre genel kullanılan kodlar;
+(kodlar kujira projesi üzerinden yazılmıştır)
+
+- **Cüzdan isminizi değiştirmek isterseniz wallet olan yerleri kendi cüzdan isminiz ile değiştirebilirsiniz.**
+
+Yeni Cüzdan 
+
+'''
+kujirad keys add wallet
+'''
+
+Kullanmak istediğiniz cüzdan (cüzdan mnemoniclerinizi import etmek için)
+
+'''
+kujirad keys add wallet --recover
+'''
