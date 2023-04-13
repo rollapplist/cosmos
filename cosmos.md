@@ -93,7 +93,7 @@ kujirad tx staking edit-validator \
 kujirad tx slashing unjail --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-## Validatörünüz bilgilerini görme
+## Validatör detayını görme
 
 ```
 kujirad q staking validator $(kujirad keys show wallet --bech val -a)
@@ -193,6 +193,19 @@ Testnet projeleri için uygundur. Mainnet Validatörleri için tercih edilmez.
 sed -i.bak -e 's|^pruning *=.*|pruning = "custom"|; s|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|; s|^pruning-keep-every *=.*|pruning-keep-every = "0"|; s|^pruning-interval *=.*|pruning-interval = "17"|' $HOME/.kujira/config/app.toml
 ```
 Koddaki .kujira klasörünü değiştirin.
+
+## Peer ekleme
+
+```
+PEERS="peerleriburayaekleyin"
+sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.kujira/config/config.toml
+```
+Eğer Node'unuz ağa bağlanmazsa peer eklemeniz gerekebilir. Güncel peerleri discord veya telegram kanallarından bulum koddaki ilgili yere girmeniz gerek. 
+Örnek olarak;
+
+```
+PEERS="d6f2eee997d108d4fde5683e31d678427376dfce@77.68.27.75:26656,1a781f294b8c30ab0b4e54494359263e9b389ebb@141.94.219.133:11756,ff7a1787ea93a49ece2ee92f601a4c52951278c4@185.119.118.112:2000,09076c7908db88316498cf4cd4702a8d269e0da9@15.235.114.85:26656"
+sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.kujira/config/config.toml
 
 
 
