@@ -28,5 +28,5 @@ kujirad keys add wallet --recover
 Cüzdanları isimleri ve adresleri ile listeleme
 
 ```
-kujira# f2f2f2d keys list
+kujirad keys list
 ```
