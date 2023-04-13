@@ -14,7 +14,7 @@ Tokenlarde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmas
 
 - **Cüzdan isminizi değiştirmek isterseniz wallet olan yerleri kendi cüzdan isminiz ile değiştirebilirsiniz.**
 
-##Yeni Cüzdan 
+## Yeni Cüzdan 
 
 ```
 kujirad keys add wallet
