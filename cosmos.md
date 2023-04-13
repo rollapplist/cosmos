@@ -14,24 +14,24 @@ Tokenlerde ise daha fazla değişkenlikler gösterebilir. Kyve da iki tane olmas
 
 - **Cüzdan isminizi değiştirmek isterseniz wallet olan yerleri kendi cüzdan isminiz ile değiştirebilirsiniz.**
 
-Yeni Cüzdan 
+## Yeni Cüzdan 
 
 ```
 kujirad keys add wallet
 ```
 
-Kullanmak istediğiniz cüzdan (cüzdan mnemoniclerinizi import etmek için)
+## Kullanmak istediğiniz cüzdan (cüzdan mnemoniclerinizi import etmek için)
 
 ```
 kujirad keys add wallet --recover
 ```
-Cüzdanları isimleri ve adresleri ile listeleme
+## Cüzdanları isimleri ve adresleri ile listeleme
 
 ```
 kujirad keys list
 ```
 
-Validatör Oluşturma
+## Validatör Oluşturma
 
 ```
 kujirad tx staking create-validator \
@@ -71,7 +71,7 @@ Validatör oluşturma kodunda değiştirecek olduğunuz yerler; kujirad, 1000000
 - **--gas-adjustment= gas ayarı**
 
 
-Oluşturmuş olduğunuz validatörde moniker, id, komisyon vb. değişikliği yapma
+## Oluşturmuş olduğunuz validatörde moniker, id, komisyon vb. değişikliği yapma
 
 ```
 kujirad tx staking edit-validator \
@@ -87,36 +87,36 @@ kujirad tx staking edit-validator \
 -y
 ```
 
-Jailed durumundan kurtulmak için
+## Jailed durumundan kurtulmak için
 
 ```
 kujirad tx slashing unjail --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-Validatörünüz bilgilerini görme
+## Validatörünüz bilgilerini görme
 
 ```
 kujirad q staking validator $(kujirad keys show wallet --bech val -a)
 ```
 
-Validatörünüzde biriken ödülleri çekme
+## Validatörünüzde biriken ödülleri çekme
 
 ```
 kujirad tx distribution withdraw-all-rewards --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-Validatörünüzde biriken ödül ve komisyonları çekme
+## Validatörünüzde biriken ödül ve komisyonları çekme
 
 ```
 kujirad tx distribution withdraw-rewards $(kujirad keys show wallet --bech val -a) --commission --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
-Kendi Validatörünüze token delege etme
+## Kendi Validatörünüze token delege etme
 
 ```
 kujirad tx staking delegate $(kujirad keys show wallet --bech val -a) 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-Başka Validatöre token delege etme
+## Başka Validatöre token delege etme
 
 ```
 kujirad tx staking delegate valoperadresi 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
@@ -127,18 +127,18 @@ valoperadresi= explorer üzerinde ilgili validatörün profilinde bulunan adres
 
 ![alt text](https://i.hizliresim.com/lidocpk.png)
 
-Redelegate: Stake ettiğiniz tokenleri başka validaötüre delege etme
+## Redelegate: Stake ettiğiniz tokenleri başka validaötüre delege etme
 
 ```
 kujirad tx staking redelegate $(kujirad keys show wallet --bech val -a) valoperadresi 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-Unbond: Stake ettiğiniz tokenleri unstake etme (testnet ve mainnet ağlarında unstake süresi genellikle 14-21gündür.)
+## Unbond: Stake ettiğiniz tokenleri unstake etme (testnet ve mainnet ağlarında unstake süresi genellikle 14-21gündür.)
 
 ```
 kujirad tx staking unbond $(kujirad keys show wallet --bech val -a) 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y 
 ```
-Send: Token gönderme
+## Send: Token gönderme
 
 ```
 kujirad tx bank send wallet cüzdanadresi 1000000ukuji --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y 
@@ -147,25 +147,25 @@ kujirad tx bank send wallet cüzdanadresi 1000000ukuji --from wallet --chain-id 
 cüzdanadresi=gönderecek olduğunuz cüzdan adresi
 
 
-Aktif olan proposal/oylamaları görme
+## Aktif olan proposal/oylamaları görme
 
 ```
 kujirad query gov proposals
 ```
 
-EVET oyu
+## EVET oyu
 
 ```
 kujirad tx gov vote 1 yes --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-HAYIR oyu
+## HAYIR oyu
 
 ```
 kujirad tx gov vote 1 no --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
 ```
 
-ÇEKİMSER oyu
+## ÇEKİMSER oyu
 
 ```
 kujirad tx gov vote 1 abstain --from wallet --chain-id kaiyo-1 --gas-prices 0.1ukuji --gas-adjustment 1.5 --gas auto -y
